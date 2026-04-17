@@ -29,7 +29,10 @@ App web que consume la API de OpenWeather para mostrar información meteorológi
 - Fondo con partículas
 
 ## 🌐 Demo
-**https://weather-app-demo.netlify.app/**
+
+**Frontend**: https://weather-app-front-kdpl.onrender.com
+
+**Backend API**: https://weather-app-gd26.onrender.com
 
 ## 📦 Instalación
 
