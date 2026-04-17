@@ -1,95 +1,78 @@
-# 🌤️ Weather App - Mendoza
+# 🚀 Weather App
 
-Aplicación del clima profesional desarrollada con React, TypeScript, Tailwind CSS, Node.js y Express.
+Aplicación de clima con frontend React y backend Node.js. Consulta el clima actual y pronóstico de cualquier ciudad del mundo.
 
-## Stack Tecnológico
+## 📌 Descripción
+App web que consume la API de OpenWeather para mostrar información meteorológica en tiempo real. Incluye diseño moderno con tema oscuro y visualizaciones claras de datos climáticos.
 
-- **Frontend**: React 18 + TypeScript + Vite + Tailwind CSS
-- **Backend**: Node.js + Express + TypeScript
-- **API**: OpenWeatherMap
-- **Despliegue**: Render
+## 🛠️ Tecnologías
 
-## Estructura del Proyecto
+### Frontend
+- React 18
+- TypeScript
+- Tailwind CSS
+- Lucide React
+- Vite
+
+### Backend
+- Node.js
+- Express
+- TypeScript
+- Axios
+
+## ⚡ Features
+- Búsqueda por ciudad
+- Clima actual con detalles
+- Pronóstico del día
+- Diseño responsive
+- Tema oscuro moderno
+- Fondo con partículas
+
+## 🌐 Demo
+**https://weather-app-demo.netlify.app/**
+
+## 📦 Instalación
+
+```bash
+# Clonar el repo
+git clone https://github.com/renzonodari9/weather-app.git
+cd weather-app
+
+# --- FRONTEND ---
+cd client
+npm install
+npm run dev
+
+# --- BACKEND (en otra terminal) ---
+cd server
+npm install
+npm run dev
+```
+
+## 🔐 Variables de Entorno (Backend)
+
+```env
+PORT=3001
+OPENWEATHER_API_KEY=tu-api-key
+```
+
+## 📁 Estructura
 
 ```
 weather-app/
 ├── client/          # Frontend React
-├── server/          # Backend Express
-└── README.md
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.tsx
+│   └── package.json
+│
+└── server/         # Backend Node.js
+    ├── src/
+    │   └── index.ts
+    └── package.json
 ```
 
-## Instalación Local
-
-### 1. Backend
-
-```bash
-cd server
-npm install
-```
-
-Crea un archivo `.env` basado en `.env.example` y agrega tu API key de OpenWeatherMap:
-
-```env
-OPENWEATHER_API_KEY=tu_api_key_aqui
-PORT=3001
-```
-
-Inicia el servidor:
-
-```bash
-npm run dev
-```
-
-### 2. Frontend
-
-```bash
-cd client
-npm install
-npm run dev
-```
-
-## Despliegue en Render
-
-### Backend (API)
-
-1. Crear nuevo Web Service en Render
-2. Conectar repositorio GitHub
-3. Configurar:
-   - **Root Directory**: `server`
-   - **Build Command**: `npm install && npm run build`
-   - **Start Command**: `npm start`
-4. Agregar variable de entorno: `OPENWEATHER_API_KEY`
-
-### Frontend
-
-1. Crear nuevo Static Site en Render
-2. Conectar repositorio GitHub
-3. Configurar:
-   - **Root Directory**: `client`
-   - **Build Command**: `npm install && npm run build`
-   - **Publish Directory**: `dist`
-4. Agregar variable de entorno: `VITE_API_URL=https://tu-backend.onrender.com`
-
-## Obtener API Key de OpenWeatherMap
-
-1. Ve a [openweathermap.org](https://openweathermap.org/api)
-2. Crea una cuenta gratuita
-3. Copia tu API Key del dashboard
-
-## Funcionalidades
-
-- ✅ Clima actual en tiempo real
-- ✅ Información detallada (sensación térmica, humedad, viento, visibilidad)
-- ✅ Amanecer y atardecer
-- ✅ Pronóstico de 5 días
-- ✅ Diseño responsive
-- ✅ Efectos visuales profesionales (glass morphism)
-- ✅ Soporte para cualquier ciudad de Argentina
-
-## Preview
-
-La app muestra Mendoza por defecto y permite buscar cualquier ciudad argentina.
-
-## Licencia
-
-MIT
+## 👨‍💻 Autor
+**Renzo Nodari** - Desarrollador Full Stack
+- GitHub: @renzonodari9
